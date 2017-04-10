@@ -22,6 +22,7 @@
 		9A5AA8061E9BC05A001BB55E /* LogKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9A5AA8001E9BBFDA001BB55E /* LogKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9A5AA8081E9BC078001BB55E /* LogKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9A5AA8001E9BBFDA001BB55E /* LogKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9A5AA8091E9BC07F001BB55E /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9A5AA8021E9BC00A001BB55E /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ABC32C4DBD82D3ADFC87F2CD /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = ABC32339D5AAE587970752BB /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		9A5AA7FD1E9BBEE8001BB55E /* Cartfile.private */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile.private; sourceTree = "<group>"; };
 		9A5AA8001E9BBFDA001BB55E /* LogKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LogKit.framework; path = Carthage/Build/iOS/LogKit.framework; sourceTree = "<group>"; };
 		9A5AA8021E9BC00A001BB55E /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		ABC32339D5AAE587970752BB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				9A5AA7EF1E9BBE8E001BB55E /* SwiftNimbleCarthageTests */,
 				9A5AA7D61E9BBE8E001BB55E /* Products */,
 				9A5AA7FF1E9BBFD9001BB55E /* Frameworks */,
+				ABC32339D5AAE587970752BB /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -262,6 +265,7 @@
 				9A5AA7DB1E9BBE8E001BB55E /* ViewController.swift in Sources */,
 				9A5AA7E11E9BBE8E001BB55E /* SwiftNimbleCarthage.xcdatamodeld in Sources */,
 				9A5AA7D91E9BBE8E001BB55E /* AppDelegate.swift in Sources */,
+				ABC32C4DBD82D3ADFC87F2CD /* README.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
