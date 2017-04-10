@@ -22,7 +22,6 @@
 		9A5AA8061E9BC05A001BB55E /* LogKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9A5AA8001E9BBFDA001BB55E /* LogKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9A5AA8081E9BC078001BB55E /* LogKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9A5AA8001E9BBFDA001BB55E /* LogKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9A5AA8091E9BC07F001BB55E /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9A5AA8021E9BC00A001BB55E /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		ABC32C4DBD82D3ADFC87F2CD /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = ABC32339D5AAE587970752BB /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -265,7 +264,6 @@
 				9A5AA7DB1E9BBE8E001BB55E /* ViewController.swift in Sources */,
 				9A5AA7E11E9BBE8E001BB55E /* SwiftNimbleCarthage.xcdatamodeld in Sources */,
 				9A5AA7D91E9BBE8E001BB55E /* AppDelegate.swift in Sources */,
-				ABC32C4DBD82D3ADFC87F2CD /* README.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +491,7 @@
 				9A5AA7F71E9BBE8E001BB55E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9A5AA7F81E9BBE8E001BB55E /* Build configuration list for PBXNativeTarget "SwiftNimbleCarthageTests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +500,7 @@
 				9A5AA7FA1E9BBE8E001BB55E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
