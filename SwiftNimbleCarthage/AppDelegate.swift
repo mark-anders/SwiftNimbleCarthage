@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import LogKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        log.debug("App Launched!")
         // Override point for customization after application launch.
         return true
     }
@@ -90,4 +92,39 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 }
+
+let log = { () -> LXLogger in
+    
+    var baseURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+    if let logFolder = baseURL.first {
+        var logURL = logFolder.appendingPathComponent("logs", isDirectory: true)
+        logURL = logURL.appendingPathComponent("logs.txt")
+        print("logURL: \(logURL)")
+    }
+    
+    return LXLogger(endpoints: [
+        LXConsoleEndpoint(
+            synchronous: false,
+            dateFormatter: LXDateFormatter.timeOnlyFormatter(),
+            entryFormatter: LXEntryFormatter({ entry in
+                
+                return "\(entry.dateTime)[\(entry.fileName):\(entry.lineNumber)] " +
+                "\(entry.level)::\(entry.message)"
+            })
+        ),
+        LXFileEndpoint(
+            fileURL: (FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
+                .first?.appendingPathComponent("logs", isDirectory: true)
+                .appendingPathComponent("log.txt"),
+            minimumPriorityLevel: .notice,
+            dateFormatter: LXDateFormatter.standardFormatter(),
+            entryFormatter: LXEntryFormatter({ entry in
+                return "\(entry.dateTime)[\(entry.fileName):\(entry.lineNumber)] " +
+                "\(entry.level)::\(entry.message)"
+            })
+        )
+        
+        ])
+}()
+
 

@@ -7,6 +7,8 @@
 //
 
 import XCTest
+import Nimble
+
 @testable import SwiftNimbleCarthage
 
 class SwiftNimbleCarthageTests: XCTestCase {
@@ -22,6 +24,9 @@ class SwiftNimbleCarthageTests: XCTestCase {
     }
     
     func testExample() {
+        let foo = "Foo"
+        expect(foo).to(equal("Foo"))
+        expect(foo).to(equal("Bar"))
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
